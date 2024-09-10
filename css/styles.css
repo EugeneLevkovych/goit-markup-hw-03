@@ -3,6 +3,11 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+ul, ol {
+  margin 0;
+  padding-left: 0;
+  list-style-type: none;
+}
 img {
   display: block;
 }
@@ -12,7 +17,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-/* --Header-- */
+/* =========== HEADER =========== */
 .site-header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -86,7 +91,7 @@ img {
 }
 .order-button {
   background-color: #4d5ae5;
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -108,9 +113,19 @@ img {
 .features-section {
   padding: 120px 0;
 }
-.features-title {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .features-list {
   display: flex;
   gap: 24px;
@@ -155,6 +170,7 @@ img {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-text-container {
   padding: 32px 0;
 }
