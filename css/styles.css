@@ -6,8 +6,6 @@ body {
 /* =========== RESET =========== */
 ul,
 ol {
-  margin: 0;
-  padding-left: 0;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -114,7 +112,7 @@ img {
   color: #ffffff;
   max-width: 496px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   max-width: 496px;
 }
 .order-button {
